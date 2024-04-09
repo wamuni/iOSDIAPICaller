@@ -8,7 +8,8 @@
 import Foundation
 
 public class APICaller {
-    static let shared = APICaller()
+    
+    public static let shared = APICaller()
     
     public func fetchCoursesName(completion: @escaping (([String]) -> Void)) {
         
