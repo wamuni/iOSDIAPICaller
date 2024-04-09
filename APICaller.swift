@@ -10,7 +10,7 @@ import Foundation
 public class APICaller {
     static let shared = APICaller()
     
-    public func fetchCoursesName(url: URL, completion: @escaping (([String]) -> Void)) {
+    public func fetchCoursesName(completion: @escaping (([String]) -> Void)) {
         
         guard let url = URL(string: "https://iosacademy.io/api/v1/courses/index.php") else {
             completion([])
